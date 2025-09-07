@@ -1,59 +1,59 @@
-Report Name,Category,Data Source,Current State,Owner,Notes
-Sales Summary,Core Sales,Sales,Migrated to SDP,,
-Sales trends,Core Sales,Sales,Migrated to SDP,,
-Payment methods,Core Sales,Sales,Migrated to SDP,,
-Fees,Core Sales,Sales,Migrated to SDP,,
-Tax Invoice,Core Sales,Sales,Migrated to SDP,,
-Item Sales,Sales & Inventory,Sales/Inventory,In progress migrating to SDP,,
-Category Sales,Core Sales,Sales,In progress migrating to SDP,,
-Comps,Core Sales,Sales,In progress migrating to SDP,,
-Voids,Core Sales,Sales,In progress migrating to SDP,,
-Discounts,Core Sales,Sales,In progress migrating to SDP,,
-Modifier sales,Core Sales,Sales,In progress migrating to SDP,,
-Section sales,Advanced Sales,Sales/RST data,Not started,,
-Team sales,Team & Labor,Sales/Team Member,Not started,,
-Labor vs sales,Team & Labor,Sales/Labor,Not started,,
-Kitchen Performance,Operations,Orders/RST data,Not started,,
-Transaction Status,Core Sales,Sales,Not started,,
-Taxes,Core Sales,Sales,Not started,,
-Service charges,Core Sales,Sales,Not started,,
-Custom reports,Core Sales,Sales,Not started,,
-Gift cards Sales,Gift Cards,GC data,Not started,,
-Transactions,Transactions,Orders/Sales,Not started,,
-Daily Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,,
-Monthly Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,,
-Yearly Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,,
-XYZ email,Email Reports,Sales/Inventory/Employee/Customers,Not started,,
-SQ Anniversary email,Email Reports,Sales/Inventory/Employee/Customers,Not started,,
-1099 K,Tax Reports,Tax/Compliance,Not started,,
-[Inventory Reports] Cost of Goods (COGS) sold,Inventory,Sales/Inventory/Cost,Not started,,
-[Inventory Reports] Vendor sales,Inventory,Sales/Inventory/Vendor,Not started,,
-[Inventory Reports] Projected Profit,Inventory,Sales/Inventory,Not started,,
-[Inventory Reports] Inventory by Category,Inventory,Sales/Inventory,Not started,,
-[Inventory Reports] Inventory Sell Through,Inventory,Sales/Inventory,Not started,,
-Top Customers,Customer Analytics,Sales/Customers,Not started,,
-Customers Visits,Customer Analytics,Sales/Customers,Not started,,
-Loyalty Overview Report,Customer Analytics,Loyalty/Customers,Not started,,
-top-line sales metrics (dashboard home),Dashboard Widgets,Dashboard/Sales,Not started,,
-top-line widgets (dashboard home),Dashboard Widgets,Dashboard/Sales,Not started,,
-Customer widget (dashboard home),Dashboard Widgets,Dashboard/Customers,Not started,,
-[POS] Sales,POS Reports,POS Events,Other Team Owned,POS Team,POS team migration timeline
-[POS] Disputes,POS Reports,POS Events,Other Team Owned,POS Team,POS team responsibility
-[POS] Shift Report,POS Reports,POS Events,Other Team Owned,POS Team,POS team responsibility
-[POS] Close of Day,POS Reports,POS Events,Other Team Owned,POS Team,POS team responsibility
-[POS] Cash Management Report,POS Reports,POS Events,Other Team Owned,POS Team,POS team responsibility
-[POS] Lives Sales,POS Reports,POS Events,Other Team Owned,POS Team,POS team responsibility
-Checking,Banking,Banking,Other Team Owned,Banking Team,Banking team responsibility
-Savings,Banking,Banking,Other Team Owned,Banking Team,Banking team responsibility
-Transfers Report,Banking,Banking,Other Team Owned,Banking Team,Banking team responsibility
-Loan,Banking,Banking,Other Team Owned,Banking Team,Banking team responsibility
-Balance,Banking,Banking,Other Team Owned,Banking Team,Banking team responsibility
-Cash Drawers,Banking,POS/Banking,Other Team Owned,POS Team,POS team responsibility
-Paid Invoices,Invoicing,Invoices,Other Team Owned,Invoicing Team,Invoicing team migration timeline
-Outstanding Invoices,Invoicing,Invoices,Other Team Owned,Invoicing Team,Invoicing team responsibility
-Accepted Invoices,Invoicing,Invoices,Other Team Owned,Invoicing Team,Invoicing team responsibility
-Pending approval estimates,Invoicing,Estimates,Other Team Owned,Invoicing Team,Invoicing team responsibility
-Accepted estimates,Invoicing,Estimates,Other Team Owned,Invoicing Team,Invoicing team responsibility
-Overdue invoices,Invoicing,Invoices,Other Team Owned,Invoicing Team,Invoicing team responsibility
-Disputes,Risk & Disputes,Disputes/Risk,External Workflow,Risk Team,Risk team existing workflow
-Payroll,HR & Payroll,HR/Payroll,Other Team Owned,HR Team,HR team responsibility
+Report Name,Category,Data Source,Current State,Timeline
+Sales Summary,Core Sales,Sales,Migrated to SDP,Q3 2024
+Sales trends,Core Sales,Sales,Migrated to SDP,Q3 2024
+Payment methods,Core Sales,Sales,Migrated to SDP,Q3 2024
+Fees,Core Sales,Sales,Migrated to SDP,Q3 2024
+Tax Invoice,Core Sales,Sales,Migrated to SDP,Q3 2024
+Item Sales,Sales & Inventory,Sales/Inventory,In progress migrating to SDP,Q4 2024
+Category Sales,Core Sales,Sales,In progress migrating to SDP,Q4 2024
+Comps,Core Sales,Sales,In progress migrating to SDP,Q4 2024
+Voids,Core Sales,Sales,In progress migrating to SDP,Q4 2024
+Discounts,Core Sales,Sales,In progress migrating to SDP,Q4 2024
+Modifier sales,Core Sales,Sales,In progress migrating to SDP,Q4 2024
+Section sales,Advanced Sales,Sales/RST data,Not started,Q1 2025
+Team sales,Team & Labor,Sales/Team Member,Not started,Q1 2025
+Labor vs sales,Team & Labor,Sales/Labor,Not started,Q1 2025
+Kitchen Performance,Operations,Orders/RST data,Not started,Q2 2025
+Transaction Status,Core Sales,Sales,Not started,Q1 2025
+Taxes,Core Sales,Sales,Not started,Q1 2025
+Service charges,Core Sales,Sales,Not started,Q1 2025
+Custom reports,Core Sales,Sales,Not started,Q2 2025
+Gift cards Sales,Gift Cards,GC data,Not started,Q1 2025
+Transactions,Transactions,Orders/Sales,Not started,Q1 2025
+Daily Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
+Monthly Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
+Yearly Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
+XYZ email,Email Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
+SQ Anniversary email,Email Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
+1099 K,Tax Reports,Tax/Compliance,Not started,Q1 2025
+[Inventory Reports] Cost of Goods (COGS) sold,Inventory,Sales/Inventory/Cost,Not started,Q2 2025
+[Inventory Reports] Vendor sales,Inventory,Sales/Inventory/Vendor,Not started,Q2 2025
+[Inventory Reports] Projected Profit,Inventory,Sales/Inventory,Not started,Q2 2025
+[Inventory Reports] Inventory by Category,Inventory,Sales/Inventory,Not started,Q2 2025
+[Inventory Reports] Inventory Sell Through,Inventory,Sales/Inventory,Not started,Q2 2025
+Top Customers,Customer Analytics,Sales/Customers,Not started,Q2 2025
+Customers Visits,Customer Analytics,Sales/Customers,Not started,Q2 2025
+Loyalty Overview Report,Customer Analytics,Loyalty/Customers,Not started,Q2 2025
+top-line sales metrics (dashboard home),Dashboard Widgets,Dashboard/Sales,Not started,Q1 2025
+top-line widgets (dashboard home),Dashboard Widgets,Dashboard/Sales,Not started,Q1 2025
+Customer widget (dashboard home),Dashboard Widgets,Dashboard/Customers,Not started,Q1 2025
+[POS] Sales,POS Reports,POS Events,Other Team Owned,TBD
+[POS] Disputes,POS Reports,POS Events,Other Team Owned,TBD
+[POS] Shift Report,POS Reports,POS Events,Other Team Owned,TBD
+[POS] Close of Day,POS Reports,POS Events,Other Team Owned,TBD
+[POS] Cash Management Report,POS Reports,POS Events,Other Team Owned,TBD
+[POS] Lives Sales,POS Reports,POS Events,Other Team Owned,TBD
+Checking,Banking,Banking,Other Team Owned,TBD
+Savings,Banking,Banking,Other Team Owned,TBD
+Transfers Report,Banking,Banking,Other Team Owned,TBD
+Loan,Banking,Banking,Other Team Owned,TBD
+Balance,Banking,Banking,Other Team Owned,TBD
+Cash Drawers,Banking,POS/Banking,Other Team Owned,TBD
+Paid Invoices,Invoicing,Invoices,Other Team Owned,TBD
+Outstanding Invoices,Invoicing,Invoices,Other Team Owned,TBD
+Accepted Invoices,Invoicing,Invoices,Other Team Owned,TBD
+Pending approval estimates,Invoicing,Estimates,Other Team Owned,TBD
+Accepted estimates,Invoicing,Estimates,Other Team Owned,TBD
+Overdue invoices,Invoicing,Invoices,Other Team Owned,TBD
+Disputes,Risk & Disputes,Disputes/Risk,External Workflow,TBD
+Payroll,HR & Payroll,HR/Payroll,Other Team Owned,TBD
