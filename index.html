@@ -74,85 +74,414 @@
             </svg>
         );
 
-        const reportData = [
-            // Sales Core Reports (Your Team - In Scope)
-            { report: 'Sales Summary', currentState: 'Migrated to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Sales trends', currentState: 'Migrated to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Payment methods', currentState: 'Migrated to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Fees', currentState: 'Migrated to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Tax Invoice', currentState: 'Migrated to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            
-            { report: 'Item Sales', currentState: 'In progress migrating to SDP', dataSource: 'Sales/Inventory', category: 'Sales & Inventory' },
-            { report: 'Category Sales', currentState: 'In progress migrating to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Comps', currentState: 'In progress migrating to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Voids', currentState: 'In progress migrating to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Discounts', currentState: 'In progress migrating to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Modifier sales', currentState: 'In progress migrating to SDP', dataSource: 'Sales', category: 'Core Sales' },
-            
-            { report: 'Section sales', currentState: 'Not started', dataSource: 'Sales/RST data', category: 'Advanced Sales' },
-            { report: 'Team sales', currentState: 'Not started', dataSource: 'Sales/Team Member', category: 'Team & Labor' },
-            { report: 'Labor vs sales', currentState: 'Not started', dataSource: 'Sales/Labor', category: 'Team & Labor' },
-            { report: 'Kitchen Performance', currentState: 'Not started', dataSource: 'Orders/RST data', category: 'Operations' },
-            { report: 'Transaction Status', currentState: 'Not started', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Taxes', currentState: 'Not started', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Service charges', currentState: 'Not started', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Custom reports', currentState: 'Not started', dataSource: 'Sales', category: 'Core Sales' },
-            { report: 'Gift cards Sales', currentState: 'Not started', dataSource: 'GC data', category: 'Gift Cards' },
-            { report: 'Transactions', currentState: 'Not started', dataSource: 'Orders/Sales', category: 'Transactions' },
-            { report: 'Daily Sales Summary', currentState: 'Not started', dataSource: 'Sales/Inventory/Employee/Customers', category: 'Summary Reports' },
-            { report: 'Monthly Sales Summary', currentState: 'Not started', dataSource: 'Sales/Inventory/Employee/Customers', category: 'Summary Reports' },
-            { report: 'Yearly Sales Summary', currentState: 'Not started', dataSource: 'Sales/Inventory/Employee/Customers', category: 'Summary Reports' },
-            { report: 'XYZ email', currentState: 'Not started', dataSource: 'Sales/Inventory/Employee/Customers', category: 'Email Reports' },
-            { report: 'SQ Anniversary email', currentState: 'Not started', dataSource: 'Sales/Inventory/Employee/Customers', category: 'Email Reports' },
-            { report: '1099 K', currentState: 'Not started', dataSource: 'Tax/Compliance', category: 'Tax Reports' },
-
-            // Inventory Reports
-            { report: '[Inventory Reports] Cost of Goods (COGS) sold', currentState: 'Not started', dataSource: 'Sales/Inventory/Cost', category: 'Inventory' },
-            { report: '[Inventory Reports] Vendor sales', currentState: 'Not started', dataSource: 'Sales/Inventory/Vendor', category: 'Inventory' },
-            { report: '[Inventory Reports] Projected Profit', currentState: 'Not started', dataSource: 'Sales/Inventory', category: 'Inventory' },
-            { report: '[Inventory Reports] Inventory by Category', currentState: 'Not started', dataSource: 'Sales/Inventory', category: 'Inventory' },
-            { report: '[Inventory Reports] Inventory Sell Through', currentState: 'Not started', dataSource: 'Sales/Inventory', category: 'Inventory' },
-
-            // Customer Analytics
-            { report: 'Top Customers', currentState: 'Not started', dataSource: 'Sales/Customers', category: 'Customer Analytics' },
-            { report: 'Customers Visits', currentState: 'Not started', dataSource: 'Sales/Customers', category: 'Customer Analytics' },
-            { report: 'Loyalty Overview Report', currentState: 'Not started', dataSource: 'Loyalty/Customers', category: 'Customer Analytics' },
-
-            // Dashboard Widgets
-            { report: 'top-line sales metrics (dashboard home)', currentState: 'Not started', dataSource: 'Dashboard/Sales', category: 'Dashboard Widgets' },
-            { report: 'top-line widgets (dashboard home)', currentState: 'Not started', dataSource: 'Dashboard/Sales', category: 'Dashboard Widgets' },
-            { report: 'Customer widget (dashboard home)', currentState: 'Not started', dataSource: 'Dashboard/Customers', category: 'Dashboard Widgets' },
-
-            // POS Reports
-            { report: '[POS] Sales', currentState: 'Other Team Owned', dataSource: 'POS Events', category: 'POS Reports', owner: 'POS Team', notes: 'POS team migration timeline' },
-            { report: '[POS] Disputes', currentState: 'Other Team Owned', dataSource: 'POS Events', category: 'POS Reports', owner: 'POS Team', notes: 'POS team responsibility' },
-            { report: '[POS] Shift Report', currentState: 'Other Team Owned', dataSource: 'POS Events', category: 'POS Reports', owner: 'POS Team', notes: 'POS team responsibility' },
-            { report: '[POS] Close of Day', currentState: 'Other Team Owned', dataSource: 'POS Events', category: 'POS Reports', owner: 'POS Team', notes: 'POS team responsibility' },
-            { report: '[POS] Cash Management Report', currentState: 'Other Team Owned', dataSource: 'POS Events', category: 'POS Reports', owner: 'POS Team', notes: 'POS team responsibility' },
-            { report: '[POS] Lives Sales', currentState: 'Other Team Owned', dataSource: 'POS Events', category: 'POS Reports', owner: 'POS Team', notes: 'POS team responsibility' },
-
-            // Banking & Financial
-            { report: 'Checking', currentState: 'Other Team Owned', dataSource: 'Banking', category: 'Banking', owner: 'Banking Team', notes: 'Banking team responsibility' },
-            { report: 'Savings', currentState: 'Other Team Owned', dataSource: 'Banking', category: 'Banking', owner: 'Banking Team', notes: 'Banking team responsibility' },
-            { report: 'Transfers Report', currentState: 'Other Team Owned', dataSource: 'Banking', category: 'Banking', owner: 'Banking Team', notes: 'Banking team responsibility' },
-            { report: 'Loan', currentState: 'Other Team Owned', dataSource: 'Banking', category: 'Banking', owner: 'Banking Team', notes: 'Banking team responsibility' },
-            { report: 'Balance', currentState: 'Other Team Owned', dataSource: 'Banking', category: 'Banking', owner: 'Banking Team', notes: 'Banking team responsibility' },
-            { report: 'Cash Drawers', currentState: 'Other Team Owned', dataSource: 'POS/Banking', category: 'Banking', owner: 'POS Team', notes: 'POS team responsibility' },
-
-            // Invoicing
-            { report: 'Paid Invoices', currentState: 'Other Team Owned', dataSource: 'Invoices', category: 'Invoicing', owner: 'Invoicing Team', notes: 'Invoicing team migration timeline' },
-            { report: 'Outstanding Invoices', currentState: 'Other Team Owned', dataSource: 'Invoices', category: 'Invoicing', owner: 'Invoicing Team', notes: 'Invoicing team responsibility' },
-            { report: 'Accepted Invoices', currentState: 'Other Team Owned', dataSource: 'Invoices', category: 'Invoicing', owner: 'Invoicing Team', notes: 'Invoicing team responsibility' },
-            { report: 'Pending approval estimates', currentState: 'Other Team Owned', dataSource: 'Estimates', category: 'Invoicing', owner: 'Invoicing Team', notes: 'Invoicing team responsibility' },
-            { report: 'Accepted estimates', currentState: 'Other Team Owned', dataSource: 'Estimates', category: 'Invoicing', owner: 'Invoicing Team', notes: 'Invoicing team responsibility' },
-            { report: 'Overdue invoices', currentState: 'Other Team Owned', dataSource: 'Invoices', category: 'Invoicing', owner: 'Invoicing Team', notes: 'Invoicing team responsibility' },
-
-            // Risk & Disputes
-            { report: 'Disputes', currentState: 'External Workflow', dataSource: 'Disputes/Risk', category: 'Risk & Disputes', owner: 'Risk Team', notes: 'Risk team existing workflow' },
-
-            // HR & Payroll
-            { report: 'Payroll', currentState: 'Other Team Owned', dataSource: 'HR/Payroll', category: 'HR & Payroll', owner: 'HR Team', notes: 'HR team responsibility' }
-        ];
+        const reportData =             [
+                      {
+                                "report": "Sales Summary",
+                                "currentState": "Migrated to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q3 2024"
+                      },
+                      {
+                                "report": "Sales trends",
+                                "currentState": "Migrated to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q3 2024"
+                      },
+                      {
+                                "report": "Payment methods",
+                                "currentState": "Migrated to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q3 2024"
+                      },
+                      {
+                                "report": "Fees",
+                                "currentState": "Migrated to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q3 2024"
+                      },
+                      {
+                                "report": "Tax Invoice",
+                                "currentState": "Migrated to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q3 2024"
+                      },
+                      {
+                                "report": "Item Sales",
+                                "currentState": "In progress migrating to SDP",
+                                "dataSource": "Sales/Inventory",
+                                "category": "Sales & Inventory",
+                                "timeline": "Q4 2024"
+                      },
+                      {
+                                "report": "Category Sales",
+                                "currentState": "In progress migrating to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q4 2024"
+                      },
+                      {
+                                "report": "Comps",
+                                "currentState": "In progress migrating to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q4 2024"
+                      },
+                      {
+                                "report": "Voids",
+                                "currentState": "In progress migrating to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q4 2024"
+                      },
+                      {
+                                "report": "Discounts",
+                                "currentState": "In progress migrating to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q4 2024"
+                      },
+                      {
+                                "report": "Modifier sales",
+                                "currentState": "In progress migrating to SDP",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q4 2024"
+                      },
+                      {
+                                "report": "Section sales",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/RST data",
+                                "category": "Advanced Sales",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Team sales",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Team Member",
+                                "category": "Team & Labor",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Labor vs sales",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Labor",
+                                "category": "Team & Labor",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Kitchen Performance",
+                                "currentState": "Not started",
+                                "dataSource": "Orders/RST data",
+                                "category": "Operations",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "Transaction Status",
+                                "currentState": "Not started",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Taxes",
+                                "currentState": "Not started",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Service charges",
+                                "currentState": "Not started",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Custom reports",
+                                "currentState": "Not started",
+                                "dataSource": "Sales",
+                                "category": "Core Sales",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "Gift cards Sales",
+                                "currentState": "Not started",
+                                "dataSource": "GC data",
+                                "category": "Gift Cards",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Transactions",
+                                "currentState": "Not started",
+                                "dataSource": "Orders/Sales",
+                                "category": "Transactions",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Daily Sales Summary",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory/Employee/Customers",
+                                "category": "Summary Reports",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "Monthly Sales Summary",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory/Employee/Customers",
+                                "category": "Summary Reports",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "Yearly Sales Summary",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory/Employee/Customers",
+                                "category": "Summary Reports",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "XYZ email",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory/Employee/Customers",
+                                "category": "Email Reports",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "SQ Anniversary email",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory/Employee/Customers",
+                                "category": "Email Reports",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "1099 K",
+                                "currentState": "Not started",
+                                "dataSource": "Tax/Compliance",
+                                "category": "Tax Reports",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "[Inventory Reports] Cost of Goods (COGS) sold",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory/Cost",
+                                "category": "Inventory",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "[Inventory Reports] Vendor sales",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory/Vendor",
+                                "category": "Inventory",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "[Inventory Reports] Projected Profit",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory",
+                                "category": "Inventory",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "[Inventory Reports] Inventory by Category",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory",
+                                "category": "Inventory",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "[Inventory Reports] Inventory Sell Through",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Inventory",
+                                "category": "Inventory",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "Top Customers",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Customers",
+                                "category": "Customer Analytics",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "Customers Visits",
+                                "currentState": "Not started",
+                                "dataSource": "Sales/Customers",
+                                "category": "Customer Analytics",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "Loyalty Overview Report",
+                                "currentState": "Not started",
+                                "dataSource": "Loyalty/Customers",
+                                "category": "Customer Analytics",
+                                "timeline": "Q2 2025"
+                      },
+                      {
+                                "report": "top-line sales metrics (dashboard home)",
+                                "currentState": "Not started",
+                                "dataSource": "Dashboard/Sales",
+                                "category": "Dashboard Widgets",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "top-line widgets (dashboard home)",
+                                "currentState": "Not started",
+                                "dataSource": "Dashboard/Sales",
+                                "category": "Dashboard Widgets",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "Customer widget (dashboard home)",
+                                "currentState": "Not started",
+                                "dataSource": "Dashboard/Customers",
+                                "category": "Dashboard Widgets",
+                                "timeline": "Q1 2025"
+                      },
+                      {
+                                "report": "[POS] Sales",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "POS Events",
+                                "category": "POS Reports",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "[POS] Disputes",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "POS Events",
+                                "category": "POS Reports",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "[POS] Shift Report",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "POS Events",
+                                "category": "POS Reports",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "[POS] Close of Day",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "POS Events",
+                                "category": "POS Reports",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "[POS] Cash Management Report",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "POS Events",
+                                "category": "POS Reports",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "[POS] Lives Sales",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "POS Events",
+                                "category": "POS Reports",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Checking",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Banking",
+                                "category": "Banking",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Savings",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Banking",
+                                "category": "Banking",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Transfers Report",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Banking",
+                                "category": "Banking",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Loan",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Banking",
+                                "category": "Banking",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Balance",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Banking",
+                                "category": "Banking",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Cash Drawers",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "POS/Banking",
+                                "category": "Banking",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Paid Invoices",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Invoices",
+                                "category": "Invoicing",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Outstanding Invoices",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Invoices",
+                                "category": "Invoicing",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Accepted Invoices",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Invoices",
+                                "category": "Invoicing",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Pending approval estimates",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Estimates",
+                                "category": "Invoicing",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Accepted estimates",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Estimates",
+                                "category": "Invoicing",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Overdue invoices",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "Invoices",
+                                "category": "Invoicing",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Disputes",
+                                "currentState": "External Workflow",
+                                "dataSource": "Disputes/Risk",
+                                "category": "Risk & Disputes",
+                                "timeline": "TBD"
+                      },
+                      {
+                                "report": "Payroll",
+                                "currentState": "Other Team Owned",
+                                "dataSource": "HR/Payroll",
+                                "category": "HR & Payroll",
+                                "timeline": "TBD"
+                      }
+            ];
 
         const getStatusIcon = (status) => {
             switch (status) {

@@ -51,11 +51,8 @@ function convertToJSArray(csvData) {
             category: row['Category']
         };
         
-        if (row['Owner']) {
-            jsObj.owner = row['Owner'];
-        }
-        if (row['Notes']) {
-            jsObj.notes = row['Notes'];
+        if (row['Timeline']) {
+            jsObj.timeline = row['Timeline'];
         }
         
         return jsObj;
