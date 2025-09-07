@@ -712,6 +712,22 @@
                                     </div>
                                 </div>
 
+                                {/* Migration Strategy Summary */}
+                                <div className="bg-white rounded-lg shadow p-6 mb-8">
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Summary</h3>
+                                    <div className="text-gray-700 leading-relaxed">
+                                        <p className="mb-4">
+                                            We have successfully migrated core sales reports (Sales Summary, Sales Trends, Fees, and Payment Methods) from Beemo to SDP, covering the majority of sales metrics. With this foundation in place, we are shifting from a report-by-report migration to building data objects (Catalog, Orders, Labor, Customer) that will power multiple reporting experiences.
+                                        </p>
+                                        <p className="mb-4">
+                                            The rollout will begin with Catalog objects and a comprehensive Custom Item–level reporting experience, followed by expansions into Orders, Labor, and Customer data. In this new model, sellers will be able to build their own reports from a much richer and more flexible data set.
+                                        </p>
+                                        <p>
+                                            Our long-term goal is to provide read access to these data objects via a well-defined API/service, enabling both first-party and third-party use cases. <a href="#" className="text-blue-600 hover:text-blue-800 underline">Read more here</a>
+                                        </p>
+                                    </div>
+                                </div>
+
                                 {/* Progress Bar */}
                                 <div className="bg-white rounded-lg shadow p-6 mb-8">
                                     <h3 className="text-lg font-semibold text-gray-900 mb-4">Overall Progress</h3>
