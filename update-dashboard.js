@@ -68,8 +68,8 @@ function updateHTMLFile(newData) {
     const dataString = JSON.stringify(newData, null, 12);
     
     // Replace the reportData array in the HTML file
-    const startMarker = 'const reportData = [';
-    const endMarker = '        ];';
+    const startMarker = 'const reportData =';
+    const endMarker = '            ];';
     
     const startIndex = htmlContent.indexOf(startMarker);
     const endIndex = htmlContent.indexOf(endMarker, startIndex) + endMarker.length;
