@@ -1,43 +1,43 @@
 Report Name,Category,Data Source,Current State,Timeline
-Sales Summary,Core Sales,Sales,Migrated to SDP,Q3 2024
-Sales trends,Core Sales,Sales,Migrated to SDP,Q3 2024
-Payment methods,Core Sales,Sales,Migrated to SDP,Q3 2024
-Fees,Core Sales,Sales,Migrated to SDP,Q3 2024
-Tax Invoice,Core Sales,Sales,Migrated to SDP,Q3 2024
-Item Sales,Sales & Inventory,Sales/Inventory,In progress migrating to SDP,Q4 2024
-Category Sales,Core Sales,Sales,In progress migrating to SDP,Q4 2024
-Comps,Core Sales,Sales,In progress migrating to SDP,Q4 2024
-Voids,Core Sales,Sales,In progress migrating to SDP,Q4 2024
-Discounts,Core Sales,Sales,In progress migrating to SDP,Q4 2024
-Modifier sales,Core Sales,Sales,In progress migrating to SDP,Q4 2024
-Section sales,Advanced Sales,Sales/RST data,Not started,Q1 2025
-Team sales,Team & Labor,Sales/Team Member,Not started,Q1 2025
-Labor vs sales,Team & Labor,Sales/Labor,Not started,Q1 2025
-Kitchen Performance,Operations,Orders/RST data,Not started,Q2 2025
-Transaction Status,Core Sales,Sales,Not started,Q1 2025
-Taxes,Core Sales,Sales,Not started,Q1 2025
-Service charges,Core Sales,Sales,Not started,Q1 2025
-Custom reports,Core Sales,Sales,Not started,Q2 2025
-Gift cards Sales,Gift Cards,GC data,Not started,Q1 2025
-Transactions,Transactions,Orders/Sales,Not started,Q1 2025
-Daily Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
-Monthly Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
-Yearly Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
-XYZ email,Email Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
-SQ Anniversary email,Email Reports,Sales/Inventory/Employee/Customers,Not started,Q2 2025
-1099 K,Tax Reports,Tax/Compliance,Not started,Q1 2025
-[Inventory Reports] Cost of Goods (COGS) sold,Inventory,Sales/Inventory/Cost,Not started,Q2 2025
-[Inventory Reports] Vendor sales,Inventory,Sales/Inventory/Vendor,Not started,Q2 2025
-[Inventory Reports] Projected Profit,Inventory,Sales/Inventory,Not started,Q2 2025
-[Inventory Reports] Inventory by Category,Inventory,Sales/Inventory,Not started,Q2 2025
-[Inventory Reports] Inventory Sell Through,Inventory,Sales/Inventory,Not started,Q2 2025
-Top Customers,Customer Analytics,Sales/Customers,Not started,Q2 2025
-Customers Visits,Customer Analytics,Sales/Customers,Not started,Q2 2025
-Loyalty Overview Report,Customer Analytics,Loyalty/Customers,Not started,Q2 2025
-top-line sales metrics (dashboard home),Dashboard Widgets,Dashboard/Sales,Not started,Q1 2025
-top-line widgets (dashboard home),Dashboard Widgets,Dashboard/Sales,Not started,Q1 2025
-Customer widget (dashboard home),Dashboard Widgets,Dashboard/Customers,Not started,Q1 2025
-[POS] Sales,POS Reports,POS Events,Other Team Owned,TBD
+Sales trends,Core Sales,Sales,Migrated to SDP,Q4 2024
+Payment methods,Core Sales,Sales,Migrated to SDP,Q1 2025
+Fees,Core Sales,Sales,Migrated to SDP,Q1 2025
+Tax Invoice,Core Sales,Sales,Migrated to SDP,Q1 2025
+Sales Summary,Core Sales,Sales,Migrated to SDP,Q2 2025
+Item Sales,Sales & Inventory,Sales/Inventory,In progress migrating to SDP,Q4 2025
+Category Sales,Core Sales,Sales,In progress migrating to SDP,Q4 2025
+Comps,Core Sales,Sales,In progress migrating to SDP,Q4 2025
+Voids,Core Sales,Sales,In progress migrating to SDP,Q4 2025
+Discounts,Core Sales,Sales,In progress migrating to SDP,Q4 2025
+Modifier sales,Core Sales,Sales,In progress migrating to SDP,Q4 2025
+Custom reports,Core Sales,Sales,Not started,Q4 2025 to 2026
+[POS] Sales,POS Reports,POS Events,Not started,Q1 2026
+Transaction Status,Core Sales,Sales,Not started,Q2 2026
+Taxes,Core Sales,Sales,Not started,Q2 2026
+Service charges,Core Sales,Sales,Not started,Q2 2026
+Transactions,Transactions,Orders/Sales,Not started,Q2 2026
+[Inventory Reports] Cost of Goods (COGS) sold,Inventory,Sales/Inventory/Cost,Not started,Q2 2026
+[Inventory Reports] Vendor sales,Inventory,Sales/Inventory/Vendor,Not started,Q2 2026
+[Inventory Reports] Projected Profit,Inventory,Sales/Inventory,Not started,Q2 2026
+[Inventory Reports] Inventory by Category,Inventory,Sales/Inventory,Not started,Q2 2026
+[Inventory Reports] Inventory Sell Through,Inventory,Sales/Inventory,Not started,Q2 2026
+Labor vs sales,Team & Labor,Sales/Labor,Not started,Q4 2026
+Team sales,Team & Labor,Sales/Team Member,Not started,Q4 2026
+Top Customers,Customer Analytics,Sales/Customers,Other Team Owned,Q4 2026
+Customers Visits,Customer Analytics,Sales/Customers,Other Team Owned,Q4 2026
+Gift cards Sales,Gift Cards,GC data,Not started,TBD
+Kitchen Performance,Operations,Orders/RST data,Not started,TBD
+Section sales,Advanced Sales,Sales/RST data,Not started,TBD
+Daily Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,TBD
+Monthly Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,TBD
+Yearly Sales Summary,Summary Reports,Sales/Inventory/Employee/Customers,Not started,TBD
+XYZ email,Email Reports,Sales/Inventory/Employee/Customers,Not started,TBD
+SQ Anniversary email,Email Reports,Sales/Inventory/Employee/Customers,Not started,TBD
+1099 K,Tax Reports,Tax/Compliance,Not started,TBD
+Loyalty Overview Report,Customer Analytics,Loyalty/Customers,Other Team Owned,TBD
+top-line sales metrics (dashboard home),Dashboard Widgets,Dashboard/Sales,Other Team Owned,TBD
+top-line widgets (dashboard home),Dashboard Widgets,Dashboard/Sales,Other Team Owned,TBD
+Customer widget (dashboard home),Dashboard Widgets,Dashboard/Customers,Other Team Owned,TBD
 [POS] Disputes,POS Reports,POS Events,Other Team Owned,TBD
 [POS] Shift Report,POS Reports,POS Events,Other Team Owned,TBD
 [POS] Close of Day,POS Reports,POS Events,Other Team Owned,TBD
